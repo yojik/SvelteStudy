@@ -4,10 +4,26 @@
 
 <main>
 	<h1>Hello {name}!</h1>
+
+	<textarea bind:value={name} />
+
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+<a-scene embedded>
+	<a-text  position="0 0 -3"  scale="2 2 2 " rotation="0 45 0" 
+	  color="#ff3e00" 
+		value={name}></a-text>
+</a-scene>
+
 </main>
 
+
+
 <style>
+a-scene {
+  height: 300px;
+  width: 600px;
+}
+
 	main {
 		text-align: center;
 		padding: 1em;
