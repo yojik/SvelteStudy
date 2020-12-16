@@ -1,5 +1,6 @@
 <script>
 	export let name;
+	let rotation = "2 2 2"
 </script>
 
 <main>
@@ -9,7 +10,7 @@
 
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 <a-scene embedded>
-	<a-text  position="0 0 -3"  scale="2 2 2 " rotation="0 45 0" 
+	<a-text  position="0 0 -3"  scale="2 2 2 " rotation={rotation} 
 	  color="#ff3e00" 
 		value={name}></a-text>
 </a-scene>
